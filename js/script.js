@@ -17,3 +17,11 @@ $(document).ready(function(){
         return false;
     });
 });
+
+const hamburger = document.querySelector('.promo__burger'),
+      menu = document.querySelector('.promo__menu');
+      
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('promo__burger-active');
+    menu.classList.toggle('promo__menu-active');
+});
